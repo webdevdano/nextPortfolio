@@ -155,7 +155,7 @@ export default function MusicPill({
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-4 sm:right-6 z-50">
       <div className="flex items-center gap-2 rounded-full border border-(--foreground)/15 bg-(--background)/80 backdrop-blur-md px-3 py-2 text-sm text-(--foreground)">
         <button
           type="button"

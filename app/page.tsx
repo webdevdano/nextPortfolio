@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[--background]">
-      <main className="max-w-5xl mx-auto px-6 pt-28 pb-16 ">
+      <main className="max-w-5xl mx-auto px-6 pt-28 pb-32 ">
         <Hero
           carousel="manual"
           media={[
@@ -41,38 +41,48 @@ export default function Home() {
                 height={160}
                 className="h-30 w-30 sm:h-30 sm:w-30 mt-2 mr-5 rounded-full object-cover border border-(--foreground)/15 bg-(--foreground)/3 shrink-0"
               />
+
             </div>
 
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
-              <a className="text-(--foreground) opacity-70 hover:opacity-100 transition-opacity" href="#">
-                GitHub
-              </a>
-              <a className="text-(--foreground) opacity-70 hover:opacity-100 transition-opacity" href="#">
-                LinkedIn
-              </a>
-              <a className="text-(--foreground) opacity-70 hover:opacity-100 transition-opacity" href="#">
-                Email
-              </a>
-            </div>
-
-            <p className="mt-6 max-w-2xl text-(--foreground)/70 leading-relaxed">
+            <p className="mt-6 max-w-2xl text-(--body) leading-relaxed">
               Freelancer with a passion for coding, cooking, music & a lot of love for the outdoors.
               Looking to land and grow with a company giving 110%, becoming the best version of myself to date.
             </p>
           </section>
 
           <Section title="Work Experience">
-            <Item heading="Company" meta="2024 — Present · Title">
+
+            <Item heading="Full Stack Developer - (Client Projects)" meta="2025 — Present · Freelancer">
               <ul className="list-disc pl-5 space-y-2">
-                <li>Shipped UI improvements across key product flows.</li>
-                <li>Built reusable components to speed up delivery.</li>
-                <li>Improved performance and accessibility across the app.</li>
+                <li>Designed and developed full-stack web applications using the MERN stack and Next.js,
+                  delivering responsive, mobile-first user experiences.</li>
+                <li>Implemented Stripe payment processing, including checkout flows and secure transaction
+                  handling, for e-commerce functionality. As well as an admin dashboards enabling business 
+                  owners to manage products, pricing, and content without developer intervention.</li>
+                <li>Refactored and enhanced existing applications with TypeScript and Tailwind CSS, 
+                  improving maintainability, performance, and UI consistency.</li>
+                <li>Deployed applications to Netlify, Render and Vercel, managing environment variables,
+                  build pipelines, and production configurations.</li>
               </ul>
             </Item>
-            <Item heading="Company" meta="2021 — 2024 · Title">
+
+            <Item heading="Front-End / Full Stack Developer" meta="2022 — Present · Various Projects">
               <ul className="list-disc pl-5 space-y-2">
-                <li>Led design system adoption for multiple teams.</li>
-                <li>Collaborated with engineering and product to define UX.</li>
+                <li>Built and deployed multiple full-stack applications including a barbershop booking 
+                  platform and an e-commerce site using React, Node.js, Express, and MongoDB.</li>
+                <li>Implemented authentication, RESTful APIs, and database relationships to support real-world business logic.</li>
+                <li>Collaborated in a remote, team-based learning environment emphasizing industry best practices, code reviews, 
+                  and production-ready standards.</li>
+              </ul>
+            </Item>
+
+            <Item heading='Bartender / Barback' meta='2021 - Present · Event Aces'>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Provided exceptional customer service in a fast-paced event environment, ensuring guest satisfaction.</li>
+                <li>Managed and worked in high-pressure, fast-paced environments serving hundreds of customers per shift, developing strong communication,
+                  time management, and reliability.</li>
+                <li>Maintained cleanliness and organization of the bar area, adhering to health and safety regulations. Trusted with inventory management,
+                  logistics, and end of event operations experience directly transferable to production ownership in engineering teams.</li>
               </ul>
             </Item>
           </Section>
@@ -89,7 +99,27 @@ export default function Home() {
                 </>
               }
             >
-              Coursework and projects focused on software engineering and product design.
+              -700 Hour course <br/>
+              -Covering key aspects of front-end & back-end development, algorithms, databases and data structures.
+              <br/>
+              Front-End Development <br/>
+              -HTML5 (Semantic Markup, Accessibility/WCAG)
+              -CSS (Later TailwindCSS for rapid, responsive styling) <br/>
+              -JavaScript (ES6+ (Promises, Async/Await, Destructuring))
+              -DOM Manipulation, Event-Driven Programming <br/>
+              -Fetch API, Axios for API integration <br/>
+              -Frameworks/Libraries-  React.js for building dynamic user interfaces, state management with Redux and Context API, routing with React Router <br/>
+              -Testing- Jest and React Testing Library for unit and integration testing <br/>
+              -Version Control- Git (Branching, Merging, Pull Requests), GitHub for collaboration and project management <br/>
+              -Deployment- Netlify/Vercel for static front-end deployment, CI/CD with GitHub Actions <br/>
+              -TypeScript- Strong typing, interfaces, generics, and type safety in both front-end and back-end codebases. <br/>
+
+              Back-End Development<br/>
+              -Node.js- Asynchronous Programming, File System Operations, Building Scalable APIs <br/>
+              -Express.js- RESTful APIs, Middleware, JWT Authentication, Error Handling <br/>
+              -Databases- MongoDB, Appwrite (Authentication, NoSQL Databases, Storage) <br/>
+              -Version Control- Git (Branching, Merging, Pull Requests), GitHub for collaboration and project management <br/>
+              -Deployment- Netlify/Render for static and full-stack app deployment, CI/CD with GitHub Actions
             </Item>
             <Item
               heading="100Devs"
@@ -97,11 +127,12 @@ export default function Home() {
                 <>
                   <span>Online / Bootcamp</span>
                   <br />
-                  <span>2022 — 2023</span>
+                  <span>2023 — 2024</span>
                 </>
               }
             >
-              Continued learning in front-end engineering and personal branding.
+              Completed 55-class curriculum via live and recorded sessions on YouTube, covering beginner-to-advanced 
+              full-stack development with HTML, CSS, JavaScript, Node.js, Express, MongoDB, and real-world projects.
             </Item>
           </Section>
 
@@ -110,25 +141,25 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
                 <h3 className="text-(--foreground) font-medium">Next.js</h3>
-                <p className="mt-2 text-sm text-(--foreground)/70 leading-relaxed">
+                <p className="mt-2 text-sm text-(--body) leading-relaxed">
                   Building modern apps with the App Router, server components, and great DX.
                 </p>
               </div>
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
                 <h3 className="text-(--foreground) font-medium">UI Engineering</h3>
-                <p className="mt-2 text-sm text-(--foreground)/70 leading-relaxed">
+                <p className="mt-2 text-sm text-(--body) leading-relaxed">
                   Component systems, accessible patterns, and performance-minded styling.
                 </p>
               </div>
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
                 <h3 className="text-(--foreground) font-medium">Design Tools</h3>
-                <p className="mt-2 text-sm text-(--foreground)/70 leading-relaxed">
+                <p className="mt-2 text-sm text-(--body) leading-relaxed">
                   Prototyping and iterating quickly with a design-first mindset.
                 </p>
               </div>
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
                 <h3 className="text-(--foreground) font-medium">TypeScript</h3>
-                <p className="mt-2 text-sm text-(--foreground)/70 leading-relaxed">
+                <p className="mt-2 text-sm text-(--body) leading-relaxed">
                   Strong types, safer refactors, and cleaner APIs.
                 </p>
               </div>

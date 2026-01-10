@@ -25,16 +25,28 @@ export function Item({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-      <div className="flex items-start justify-between gap-6">
-        <div>
-          <h3 className="text-(--foreground) font-medium">{heading}</h3>
-          <p className="mt-1 text-sm text-(--foreground)/50 leading-snug">{meta}</p>
+    <details className="group rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+      <summary className="list-none cursor-pointer [&::-webkit-details-marker]:hidden">
+        <div className="flex items-start justify-between gap-6">
+          <div>
+            <h3 className="text-(--foreground) font-medium">{heading}</h3>
+            <p className="mt-1 text-sm text-(--body) leading-snug">{meta}</p>
+          </div>
+
+          <span className="mt-1 inline-flex select-none items-center gap-2 rounded-full border border-(--foreground)/15 bg-(--background)/35 px-3 py-1 text-xs text-(--body) backdrop-blur-sm">
+            <span className="group-open:hidden">Show</span>
+            <span className="hidden group-open:inline">Hide</span>
+            <span aria-hidden className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-(--foreground)/15 text-(--body)">
+              <span className="group-open:hidden">+</span>
+              <span className="hidden group-open:inline">–</span>
+            </span>
+          </span>
         </div>
-      </div>
-      <div className="mt-4 text-sm text-(--foreground)/70 leading-relaxed">
+      </summary>
+
+      <div className="mt-4 text-sm text-(--body) leading-relaxed">
         {children}
       </div>
-    </div>
+    </details>
   );
 }

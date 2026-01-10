@@ -1,10 +1,9 @@
 import Hero from "../components/Hero";
-import { Item, Section } from "../components/ContentBlocks";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
-      <main className="max-w-5xl mx-auto px-6 pt-28 pb-16">
+      <main className="max-w-5xl mx-auto px-6 pt-28 pb-32">
         <Hero
           carousel="manual"
           media={[
@@ -26,20 +25,19 @@ export default function AboutPage() {
         />
 
         <div className="mt-10 rounded-3xl border border-(--foreground)/12 bg-(--background)/55 backdrop-blur-md p-8">
-          <Section title="About Me">
-            <Item heading="Daniel Marinelarena" meta="Design Engineer">
-              Hello! I&apos;m Daniel, a design engineer with a passion for creating innovative solutions
-              that blend functionality with aesthetics. With a background in mechanical engineering
-              and a keen eye for detail, I strive to bring ideas to life through thoughtful design
-              and meticulous execution.
-            </Item>
-            <Item heading="My Work" meta="Portfolio Highlights">
-              My portfolio showcases a diverse range of projects, from product design to user
-              experience enhancements. Each project reflects my commitment to excellence and my
-              ability to adapt to various design challenges. I believe in the power of collaboration
-              and continuous learning to push the boundaries of what&apos;s possible.
-            </Item>
-          </Section>
+          <h1 className="text-(--foreground) text-3xl sm:text-4xl font-semibold tracking-tight">About Me</h1>
+          <p className="mt-6 text-(--body) leading-relaxed">
+            I am a driven full-stack developer with a strong foundation in HTML, CSS, JavaScript, React, TailwindCSS,
+            Node.js, Express and MongoDB, honed through intensive bootcamps with Springboard and 100Devs. Transitioning
+            from a fast-paced role at an Amazon warehouse and weekend bartending, I bring a problem-solving mindset
+            and a knack for creating efficient, user-focused solutions. <br />
+            Whether designing responsive, visually appealing front-ends with React and TailwindCSS or building scalable
+            backends with Node.js, Express, and MongoDB, I thrive on turning ideas into functional, impactful applications.
+            <br />
+            Beyond coding, I am passionate about continuous learning and staying abreast of industry trends to deliver
+            cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes,
+            gaming, producing music in Ableton and cheering on my favorite teams with loved ones.
+          </p>
         </div>
       </main>
     </div>
