@@ -77,7 +77,7 @@ export default function Hero({
       {sizedTiles.length ? (
         <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
           {carousel === "auto" ? (
-            <div className="overflow-hidden">
+            <div className="overflow-hidden pl-4 sm:pl-6">
               {rows === 2 && columns.length ? (
                 <div
                   className="flex w-max gap-4 items-end motion-reduce:animate-none"
@@ -89,7 +89,7 @@ export default function Hero({
                   }}
                 >
                   {(loop === "restart" ? columns : [...columns, ...columns]).map((col, idx) => (
-                    <div key={`col:${idx}`} className="flex flex-col gap-4 h-[calc(theme(spacing.72)_*_2_+_theme(spacing.4))] justify-end">
+                    <div key={`col:${idx}`} className="flex flex-col gap-4 h-[calc(--spacing(72)*2+(--spacing(4)))] justify-end">
                       {col.a ? (
                         <div
                           className={`${col.a.heightClass} ${col.a.widthClass} rounded-2xl ring-1 ring-(--foreground)/10 bg-(--foreground)/3 overflow-hidden shrink-0`}
@@ -189,12 +189,12 @@ export default function Hero({
               )}
             </div>
           ) : (
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto no-scrollbar pl-4 sm:pl-6">
               <div className="w-max py-1">
                 {rows === 2 && columns.length ? (
                   <div className="flex w-max gap-4 items-end">
                     {columns.map((col, idx) => (
-                      <div key={`col:${idx}`} className="flex flex-col gap-4 h-[calc(theme(spacing.72)_*_2_+_theme(spacing.4))] justify-end">
+                      <div key={`col:${idx}`} className="flex flex-col gap-4 h-[calc(--spacing(72)*2+(--spacing(4)))] justify-end">
                         {col.a ? (
                           <div
                             className={`${col.a.heightClass} ${col.a.widthClass} rounded-2xl ring-1 ring-(--foreground)/10 bg-(--foreground)/3 overflow-hidden shrink-0`}
@@ -204,6 +204,7 @@ export default function Hero({
                                 className="h-full w-full object-cover"
                                 src={col.a.tile.src}
                                 poster={col.a.tile.poster}
+                                autoPlay
                                 muted
                                 loop
                                 playsInline
@@ -230,6 +231,7 @@ export default function Hero({
                                 className="h-full w-full object-cover"
                                 src={col.b.tile.src}
                                 poster={col.b.tile.poster}
+                                autoPlay
                                 muted
                                 loop
                                 playsInline
@@ -261,6 +263,7 @@ export default function Hero({
                             className="h-full w-full object-cover"
                             src={tile.src}
                             poster={tile.poster}
+                            autoPlay
                             muted
                             loop
                             playsInline

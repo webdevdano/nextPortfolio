@@ -47,7 +47,7 @@ export default function AboutPage() {
             { kind: "image", src: "/PortfolioMedia/Images/SequoiasCrown.jpeg", alt: "Sequoias" },
             { kind: "image", src: "/PortfolioMedia/Images/SequoiasRoad.jpeg", alt: "Sequoias Road" },
             { kind: "image", src: "/PortfolioMedia/Images/YosemiteNature1.jpeg", alt: "Yosemite" },
-            { kind: "video", src: "/PortfolioMedia/Videos/SturtevantFalls2.mp4" },
+            { kind: "image", src: "/PortfolioMedia/Images/HappyIslesParkingSun2.jpeg" },
             { kind: "video", src: "/PortfolioMedia/Videos/YosemiteAS.mp4" },
             { kind: "image", src: "/PortfolioMedia/Images/SturtevantFalls.jpeg", alt: "Sturtevant Falls" },
             { kind: "image", src: "/PortfolioMedia/Images/ShermShade.jpeg", alt: "Portrait" },
