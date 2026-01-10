@@ -38,11 +38,36 @@ footer {
   z-index: 1;
 }
 
+.header-backdrop {
+  background-image:
+    linear-gradient(to bottom, transparent 0%, transparent 55%, var(--background) 100%),
+    url("/PortfolioMedia/Images/HappyIslesParkingSun1.jpeg");
+  background-color: var(--background);
+  background-size: 100% auto;
+  background-position: center var(--header-backdrop-y, 0%);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .header-backdrop {
+    background-size: cover;
+  }
+}
+
 @keyframes marquee-x {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-x-restart {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

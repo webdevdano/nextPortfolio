@@ -36,12 +36,22 @@ export default function AboutPage() {
     <div className="min-h-screen">
       <main className="max-w-5xl mx-auto px-6 pt-28 pb-16">
         <Hero
-          carousel="auto"
+          carousel="manual"
           media={[
-            { kind: "image", src: "/next.svg", alt: "Next" },
-            { kind: "image", src: "/vercel.svg", alt: "Vercel" },
-            { kind: "image", src: "/globe.svg", alt: "Globe" },
-            { kind: "image", src: "/window.svg", alt: "Window" },
+            { kind: "image", src: "/PortfolioMedia/Images/HappyIslesSign.jpeg", alt: "Happy Isles" },
+            { kind: "video", src: "/PortfolioMedia/Videos/SturtevantFalls1.mp4" },
+            { kind: "image", src: "/PortfolioMedia/Images/ArcadiaFallsClose.jpeg", alt: "Arcadia Falls" },
+            { kind: "image", src: "/PortfolioMedia/Images/BonitaFallsPortrait.jpeg", alt: "Bonita Falls" },
+            { kind: "video", src: "/PortfolioMedia/Videos/SanAntonioFallsClose.mp4" },
+            { kind: "image", src: "/PortfolioMedia/Images/SanAntonioMtnRange.jpeg", alt: "Mountain Range" },
+            { kind: "image", src: "/PortfolioMedia/Images/SequoiasCrown.jpeg", alt: "Sequoias" },
+            { kind: "image", src: "/PortfolioMedia/Images/SequoiasRoad.jpeg", alt: "Sequoias Road" },
+            { kind: "image", src: "/PortfolioMedia/Images/YosemiteNature1.jpeg", alt: "Yosemite" },
+            { kind: "video", src: "/PortfolioMedia/Videos/SturtevantFalls2.mp4" },
+            { kind: "video", src: "/PortfolioMedia/Videos/YosemiteAS.mp4" },
+            { kind: "image", src: "/PortfolioMedia/Images/SturtevantFalls.jpeg", alt: "Sturtevant Falls" },
+            { kind: "image", src: "/PortfolioMedia/Images/ShermShade.jpeg", alt: "Portrait" },
+            { kind: "image", src: "/PortfolioMedia/Images/YosemiteTunnelView.jpeg", alt: "Tunnel View" },
           ]}
         />
 
