@@ -91,3 +91,16 @@ footer {
     transform: translateX(-100%);
   }
 }
+
+@keyframes marquee-track {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-track 12s linear infinite;
+}

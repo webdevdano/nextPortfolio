@@ -21,7 +21,7 @@ export function Item({
   children,
 }: {
   heading: string;
-  meta: string;
+  meta: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
@@ -29,7 +29,7 @@ export function Item({
       <div className="flex items-start justify-between gap-6">
         <div>
           <h3 className="text-(--foreground) font-medium">{heading}</h3>
-          <p className="mt-1 text-sm text-(--foreground)/50">{meta}</p>
+          <p className="mt-1 text-sm text-(--foreground)/50 leading-snug">{meta}</p>
         </div>
       </div>
       <div className="mt-4 text-sm text-(--foreground)/70 leading-relaxed">

@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeaderBackdrop from "./components/HeaderBackdrop";
+import MusicPill from "./components/MusicPill";
 import Providers from "./providers";
 
 const geistSans = Geist({
@@ -34,6 +35,20 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
+          <MusicPill
+            tracks={[
+              {
+                src: "/PortfolioMedia/Audio/03%20Cigarettes.mp3",
+                artist: "",
+                title: "Cigarettes",
+              },
+              {
+                src: "/PortfolioMedia/Audio/11.%20Ur2yung.mp3",
+                artist: "",
+                title: "Ur2yung",
+              },
+            ]}
+          />
         </Providers>
       </body>
     </html>

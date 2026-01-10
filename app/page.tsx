@@ -26,8 +26,8 @@ export default function Home() {
         />
 
         <section className="mt-10">
-          <h1 className="text-(--foreground) text-5xl font-semibold tracking-tight">Your Name</h1>
-          <p className="mt-3 text-(--foreground)/60 text-lg">Design Engineer</p>
+          <h1 className="text-(--foreground) text-5xl font-semibold tracking-tight">Daniel Marinelarena</h1>
+          <p className="mt-3 text-(--foreground)/60 text-lg">Full Stack Software Developer</p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4 text-sm">
             <a className="text-(--foreground) opacity-70 hover:opacity-100 transition-opacity" href="#">
@@ -63,15 +63,34 @@ export default function Home() {
           </Item>
         </Section>
 
+
+        {/* Studies */}
         <Section title="Studies">
-          <Item heading="University" meta="Degree / Focus">
+          <Item heading="Springboard University" meta={
+            <>
+              <span>Online / Certificate in Software Engineering</span>
+              <br />
+              <span>2025 — 2025</span>
+            </>
+          }>
             Coursework and projects focused on software engineering and product design.
           </Item>
-          <Item heading="Program" meta="Online / Certificate">
+          <Item
+            heading="100Devs"
+            meta={
+              <>
+                <span>Online / Bootcamp</span>
+                <br />
+                <span>2022 — 2023</span>
+              </>
+            }
+          >
             Continued learning in front-end engineering and personal branding.
           </Item>
         </Section>
 
+
+        {/* Skills */}
         <Section title="Technical Skills">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
