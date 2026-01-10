@@ -11,7 +11,7 @@
   --background: #0a1a15;
   --foreground: #D7C4B0;
   --foreground-secondary: #9ca3af;
-  --body: #7de3e3c1;
+  --body: #7dcbe3c1;
 }
 
 body {
@@ -105,4 +105,39 @@ footer {
 
 .marquee-track {
   animation: marquee-track 12s linear infinite;
+}
+
+.glass-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-sheen::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  pointer-events: none;
+  transform: translateX(-140%) rotate(8deg);
+  opacity: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    color-mix(in oklab, var(--foreground) 22%, transparent) 45%,
+    transparent 60%
+  );
+  transition: transform 650ms ease, opacity 250ms ease;
+}
+
+.glass-sheen:hover::before,
+.glass-sheen:focus-visible::before {
+  transform: translateX(140%) rotate(8deg);
+  opacity: 0.85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-sheen::before {
+    transition: none;
+    transform: none;
+    opacity: 0;
+  }
 }

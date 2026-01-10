@@ -83,10 +83,10 @@ export default function Home() {
 
           <Section title="Recent Projects">
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">Portfolio Website</h3>
+              <h3 className="text-(--foreground) font-medium">Hidden Gifts</h3>
               <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Developed a personal portfolio website using Next.js and TailwindCSS to showcase my projects and skills.
-                Implemented responsive design principles to ensure optimal viewing across devices. Deployed the site on Vercel for seamless access.
+                Recent commissioned E-Commerce website built with Next.js, React, Node, Express, MongoDB, and TailwindCSS. <br/>
+                Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
               </p>
             </div>
           </Section>
