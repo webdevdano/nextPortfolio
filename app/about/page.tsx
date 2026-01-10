@@ -1,4 +1,6 @@
 import Hero from "../components/Hero";
+import { Item, Section } from "../components/ContentBlocks";
+
 
 export default function AboutPage() {
   return (
@@ -38,6 +40,93 @@ export default function AboutPage() {
             cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes,
             gaming, producing music in Ableton and cheering on my favorite teams with loved ones.
           </p>
+
+          <Section title="Work Experience">
+          
+                      <Item heading="Full Stack Developer - (Client Projects)" meta="2025 — Present · Freelancer">
+                        <ul className="list-disc pl-5 space-y-2">
+                          <li>Designed and developed full-stack web applications using the MERN stack and Next.js,
+                            delivering responsive, mobile-first user experiences.</li>
+                          <li>Implemented Stripe payment processing, including checkout flows and secure transaction
+                            handling, for e-commerce functionality. As well as an admin dashboards enabling business 
+                            owners to manage products, pricing, and content without developer intervention.</li>
+                          <li>Refactored and enhanced existing applications with TypeScript and Tailwind CSS, 
+                            improving maintainability, performance, and UI consistency.</li>
+                          <li>Deployed applications to Netlify, Render and Vercel, managing environment variables,
+                            build pipelines, and production configurations.</li>
+                        </ul>
+                      </Item>
+          
+                      <Item heading="Front-End / Full Stack Developer" meta="2022 — Present · Various Projects">
+                        <ul className="list-disc pl-5 space-y-2">
+                          <li>Built and deployed multiple full-stack applications including a barbershop booking 
+                            platform and an e-commerce site using React, Node.js, Express, and MongoDB.</li>
+                          <li>Implemented authentication, RESTful APIs, and database relationships to support real-world business logic.</li>
+                          <li>Collaborated in a remote, team-based learning environment emphasizing industry best practices, code reviews, 
+                            and production-ready standards.</li>
+                        </ul>
+                      </Item>
+          
+                      <Item heading='Bartender / Barback' meta='2021 - Present · Event Aces'>
+                        <ul className="list-disc pl-5 space-y-2">
+                          <li>Provided exceptional customer service in a fast-paced event environment, ensuring guest satisfaction.</li>
+                          <li>Managed and worked in high-pressure, fast-paced environments serving hundreds of customers per shift, developing strong communication,
+                            time management, and reliability.</li>
+                          <li>Maintained cleanliness and organization of the bar area, adhering to health and safety regulations. Trusted with inventory management,
+                            logistics, and end of event operations experience directly transferable to production ownership in engineering teams.</li>
+                        </ul>
+                      </Item>
+                    </Section>
+          
+                    {/* Studies */}
+                    <Section title="Studies">
+                      <Item
+                        heading="Springboard University"
+                        meta={
+                          <>
+                            <span>Online / Certificate in Software Engineering</span>
+                            <br />
+                            <span>2025 — 2025</span>
+                          </>
+                        }
+                      >
+                        -700 Hour course <br/>
+                        -Covering key aspects of front-end & back-end development, algorithms, databases and data structures.
+                        <br/>
+                        Front-End Development <br/>
+                        -HTML5 (Semantic Markup, Accessibility/WCAG)
+                        -CSS (Later TailwindCSS for rapid, responsive styling) <br/>
+                        -JavaScript (ES6+ (Promises, Async/Await, Destructuring))
+                        -DOM Manipulation, Event-Driven Programming <br/>
+                        -Fetch API, Axios for API integration <br/>
+                        -Frameworks/Libraries-  React.js for building dynamic user interfaces, state management with Redux and Context API, routing with React Router <br/>
+                        -Testing- Jest and React Testing Library for unit and integration testing <br/>
+                        -Version Control- Git (Branching, Merging, Pull Requests), GitHub for collaboration and project management <br/>
+                        -Deployment- Netlify/Vercel for static front-end deployment, CI/CD with GitHub Actions <br/>
+                        -TypeScript- Strong typing, interfaces, generics, and type safety in both front-end and back-end codebases. <br/>
+          
+                        Back-End Development<br/>
+                        -Node.js- Asynchronous Programming, File System Operations, Building Scalable APIs <br/>
+                        -Express.js- RESTful APIs, Middleware, JWT Authentication, Error Handling <br/>
+                        -Databases- MongoDB, Appwrite (Authentication, NoSQL Databases, Storage) <br/>
+                        -Version Control- Git (Branching, Merging, Pull Requests), GitHub for collaboration and project management <br/>
+                        -Deployment- Netlify/Render for static and full-stack app deployment, CI/CD with GitHub Actions
+                      </Item>
+                      <Item
+                        heading="100Devs"
+                        meta={
+                          <>
+                            <span>Online / Bootcamp</span>
+                            <br />
+                            <span>2023 — 2024</span>
+                          </>
+                        }
+                      >
+                        Completed 55-class curriculum via live and recorded sessions on YouTube, covering beginner-to-advanced 
+                        full-stack development with HTML, CSS, JavaScript, Node.js, Express, MongoDB, and real-world projects.
+                      </Item>
+                    </Section>
+          
         </div>
       </main>
     </div>
