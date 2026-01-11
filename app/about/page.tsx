@@ -37,8 +37,8 @@ export default function AboutPage() {
             backends with Node.js, Express, and MongoDB, I thrive on turning ideas into functional, impactful applications.
             <br />
             Beyond coding, I am passionate about continuous learning and staying abreast of industry trends to deliver
-            cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes,
-            gaming, producing music in Ableton and cheering on my favorite teams with loved ones.
+            cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes, going to the gym,
+            gaming and cheering on my favorite teams with loved ones.
           </p>
 
           <Section title="Work Experience">
