@@ -38,14 +38,24 @@ export default function RootLayout({
           <MusicPill
             tracks={[
               {
-                src: "/PortfolioMedia/Audio/03%20Cigarettes.mp3",
-                artist: "",
+                src: "/PortfolioMedia/Audio/Tash%20Sultana%20-%20Cigarettes.mp3",
+                artist: "Tash Sultana",
                 title: "Cigarettes",
               },
               {
-                src: "/PortfolioMedia/Audio/11.%20Ur2yung.mp3",
-                artist: "",
+                src: "/PortfolioMedia/Audio/Machinedrum%20-%20Ur2yung.mp3",
+                artist: "Machinedrum",
                 title: "Ur2yung",
+              },
+              {
+                src: "/PortfolioMedia/Audio/Gramatik%20-%20Chillaxin'%20By%20The%20Sea.mp3",
+                artist: "Gramatik",
+                title: "Chillaxin' By The Sea",
+              },
+              {
+                src: "/PortfolioMedia/Audio/Gramatik%20-%20Skylight.mp3",
+                artist: "Gramatik",
+                title: "Skylight",
               },
             ]}
           />

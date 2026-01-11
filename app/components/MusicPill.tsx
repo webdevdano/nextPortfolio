@@ -156,7 +156,7 @@ export default function MusicPill({
 
   return (
     <div className="fixed bottom-6 right-4 sm:right-6 z-50">
-      <div className="flex items-center gap-2 rounded-full border border-(--foreground)/15 bg-(--background)/80 backdrop-blur-md px-3 py-2 text-sm text-(--foreground)">
+      <div className="flex w-[min(32rem,calc(100vw-2rem))] items-center gap-2 overflow-hidden rounded-full border border-(--foreground)/15 bg-(--background)/80 backdrop-blur-md px-3 py-2 text-sm text-(--foreground)">
         <button
           type="button"
           onClick={toggle}
@@ -185,20 +185,20 @@ export default function MusicPill({
 
         <span className="h-4 w-px bg-(--foreground)/15" aria-hidden="true" />
 
-        <div className="flex items-center gap-2">
+        <div className="flex min-w-0 flex-1 items-center gap-2">
           {shouldMarquee ? (
-            <div className="max-w-44 overflow-hidden" title={activeLabel}>
+            <div className="min-w-0 flex-1 overflow-hidden" title={activeLabel}>
               <div className="marquee-track flex w-max gap-8 opacity-70 whitespace-nowrap motion-reduce:animate-none">
                 <span>{activeLabel}</span>
                 <span aria-hidden="true">{activeLabel}</span>
               </div>
             </div>
           ) : (
-            <span className="opacity-70 max-w-44 truncate" title={activeLabel}>
+            <span className="min-w-0 flex-1 opacity-70 truncate" title={activeLabel}>
               {activeLabel}
             </span>
           )}
-          <span className="opacity-60 tabular-nums">
+          <span className="shrink-0 opacity-60 tabular-nums">
             {formatTime(currentTime)} / {formatTime(duration)}
           </span>
         </div>
@@ -228,7 +228,7 @@ export default function MusicPill({
           step={0.01}
           value={volume}
           onChange={(e) => setVolume(Number(e.target.value))}
-          className="w-20 accent-(--foreground)"
+          className="w-20 shrink-0 accent-(--foreground)"
         />
       </div>
     </div>
