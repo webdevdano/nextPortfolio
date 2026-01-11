@@ -81,13 +81,86 @@ export default function Home() {
             </div>
           </Section>
 
+
+          {/* Recent Projects */} 
           <Section title="Recent Projects">
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">Hidden Gifts</h3>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">Hidden Gifts</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Recent commissioned E-Commerce website built with Next.js, React, Node, Express, MongoDB, and TailwindCSS. <br />
+                    Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
+                  </p>
+                </div>
+
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="Hidden Gifts preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <video
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/HiddenGifts.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <h3 className="text-(--foreground) font-medium">UnitedFarms</h3>
               <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Recent commissioned E-Commerce website built with Next.js, React, Node, Express, MongoDB, and TailwindCSS. <br/>
-                Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
+                Fullstack Farm finder website with login/API integration made with Next.js, React, TypeScript,
+                Node, Express, MongoDB and TailwindCSS.
               </p>
+              
+            </div>
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <h3 className="text-(--foreground) font-medium">Surfs Up E-Commerce</h3>
+              <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                E-Commerce website built using React, TypeScript, TailwindCSS, Node, Express, and MongoDB,
+                utilizing Stripe for payment.
+              </p>
+              
+            </div>
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <h3 className="text-(--foreground) font-medium">Neighbors</h3>
+              <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                Twitter/X Clone social media app with login/storage made with Next, React, TypeScript, Node, 
+                Express, MongoDB and TailwindCSS.
+                Still in progress looking to make more changes soon
+              </p>
+              
+            </div>
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <h3 className="text-(--foreground) font-medium">FreshCutz</h3>
+              <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                Barbershop appointment website with Login, Stripe payment integration, built with React,
+                TypeScript, TailwindCSS, Node, Express and MongoDB. (MERN)
+              </p>
+              
+            </div>
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <h3 className="text-(--foreground) font-medium">TasksOnTasks</h3>
+              <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                Fullstack task manager website with login/storage made with React, TypeScript, Node, 
+                Express, MongoDB and TailwindCSS.
+              </p>
+              
             </div>
           </Section>
         </div>
