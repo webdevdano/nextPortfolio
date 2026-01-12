@@ -50,7 +50,6 @@ export default function Home() {
             </p>
           </section>
 
-          
           {/* Skills */}
           <Section title="Technical Skills">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -118,49 +117,155 @@ export default function Home() {
             </div>
 
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">UnitedFarms</h3>
-              <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Fullstack Farm finder website with login/API integration made with Next.js, React, TypeScript,
-                Node, Express, MongoDB and TailwindCSS.
-              </p>
-              
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">UnitedFarms</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Fullstack farm locator helping users discover local farms, products, and availability.<br/>
+                    Developed with Next.js, React + Typescript, Tailwind, and MERN Backend. <br/>
+                    Including user login, search, API integration for location data and content management.<br/>
+                    Biggest technical lift was implementing reliable geolocation filtering and secure API endpoints.<br/>
+                  </p>
+                </div>
+
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="UnitedFarms preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <video
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/UnitedFarms.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">Surfs Up E-Commerce</h3>
-              <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                E-Commerce website built using React, TypeScript, TailwindCSS, Node, Express, and MongoDB,
-                utilizing Stripe for payment.
-              </p>
-              
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">Surfs Up E-Commerce</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Surf gear & apparel store built to showcase products with clean visuals and frictionless purchasing.<br/>
+                    Developed using React + TypeScript, TailwindCSS, MERN backend and Stripe integration for secure payments. <br/>
+                    Focused on responsive design and fast loading for mobile shoppers.  <br/>
+                    Handled cart persistence, product filtering, and order management. 
+                  </p>
+                </div>
+
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="Surfs Up preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <video
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/SurfsUp.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
+            {/* Neighbors hidden for now */}
+            {/*
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
               <h3 className="text-(--foreground) font-medium">Neighbors</h3>
               <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Twitter/X Clone social media app with login/storage made with Next, React, TypeScript, Node, 
+                Twitter/X Clone social media app with login/storage made with Next, React, TypeScript, Node,
                 Express, MongoDB and TailwindCSS.
                 Still in progress looking to make more changes soon
               </p>
-              
+            </div>
+            */}
+
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">FreshCutz</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Barbershop appointment platform allowing customers to book services and pay securely.<br/>  
+                    Full MERN application with React + TypeScript frontend, Node/Express/MongoDB backend and styling with TailwindCSS.<br/>
+                    Integrated Stripe for payments and implemented secure user authentication.<br/>
+                    Biggest challenge was creating a smooth calendar + availability system that prevents double-bookings.
+                  </p>
+                </div>
+
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="FreshCutz preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <video
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/FreshCutz.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">FreshCutz</h3>
-              <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Barbershop appointment website with Login, Stripe payment integration, built with React,
-                TypeScript, TailwindCSS, Node, Express and MongoDB. (MERN)
-              </p>
-              
-            </div>
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">TasksOnTasks</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Full-featured task management app for individuals, built with React + TypeScript, TailwindCSS, Node/Express/MongoDB backend.<br/>
+                    Includes user authentication, CRUD operations, drag-and-drop tasks, and persistent storage.<br/>
+                    Focused on clean UX and responsive design across devices. 
+                    Overcame auth + state management complexity with good folder structure and custom hooks.  
+                  </p>
+                </div>
 
-            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-              <h3 className="text-(--foreground) font-medium">TasksOnTasks</h3>
-              <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                Fullstack task manager website with login/storage made with React, TypeScript, Node, 
-                Express, MongoDB and TailwindCSS.
-              </p>
-              
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="TasksOnTasks preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <video
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/TasksOnTasks.mp4"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </Section>
         </div>
