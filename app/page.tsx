@@ -76,6 +76,19 @@ export default function Home() {
                     Recent commissioned E-Commerce website built with Next.js, React, Node, Express, MongoDB, and TailwindCSS. <br />
                     Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
                   </p>
+
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://thehiddengiftstore.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="Hidden Gifts live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
 
                 <div
@@ -111,7 +124,10 @@ export default function Home() {
                     Including user login, search, API integration for location data and content management.<br/>
                     Biggest technical lift was implementing reliable geolocation filtering and secure API endpoints.<br/>
                   </p>
-                </div>
+
+                  
+                  
+               </div>
 
                 <div
                   className="group w-full sm:w-64 shrink-0"
@@ -146,6 +162,19 @@ export default function Home() {
                     Focused on responsive design and fast loading for mobile shoppers.  <br/>
                     Handled cart persistence, product filtering, and order management. 
                   </p>
+
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://surfsupsocal.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="Surfs Up E-Commerce live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
 
                 <div
@@ -193,6 +222,19 @@ export default function Home() {
                     Integrated Stripe for payments and implemented secure user authentication.<br/>
                     Biggest challenge was creating a smooth calendar + availability system that prevents double-bookings.
                   </p>
+
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://freshcutz.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="FreshCutz live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
 
                 <div
@@ -228,6 +270,19 @@ export default function Home() {
                     Focused on clean UX and responsive design across devices. 
                     Overcame auth + state management complexity with good folder structure and custom hooks.  
                   </p>
+
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://tasksontasks.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="TasksOnTasks live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
                 </div>
 
                 <div

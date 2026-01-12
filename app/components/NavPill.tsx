@@ -14,7 +14,7 @@ export default function NavPill() {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-2 rounded-full border border-(--foreground)/15 bg-(--background)/80 backdrop-blur-md px-2 py-2">
+    <div className="glass-sheen flex items-center gap-2 rounded-full border border-(--foreground)/15 bg-(--background)/55 backdrop-blur-md px-2 py-2">
       <Link href="/" className={linkClass(pathname === "/")}>
         Home
       </Link>
