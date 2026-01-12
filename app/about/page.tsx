@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import { Item, Section } from "../components/ContentBlocks";
+import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 
 export default function AboutPage() {
@@ -40,6 +41,23 @@ export default function AboutPage() {
             cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes, going to the gym,
             gaming and cheering on my favorite teams with loved ones.
           </p>
+
+          <div className="mt-6">
+            <a
+              href="/PortfolioMedia/Daniel_Marinelarena_WebDev-Resume.pdf"
+              download
+              className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+              aria-label="Download resume PDF"
+            >
+              <span
+                className="inline-flex items-center justify-center rounded-full border border-(--foreground)/30 bg-(--foreground)/8 p-1.5"
+                aria-hidden="true"
+              >
+                <ArrowDownTrayIcon className="h-4 w-4" />
+              </span>
+              Resume (PDF)
+            </a>
+          </div>
 
           <Section title="Work Experience">
           
