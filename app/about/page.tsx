@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import { Item, Section } from "../components/ContentBlocks";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon } from "@heroicons/react/20/solid";
 
 
 export default function AboutPage() {
@@ -37,12 +38,51 @@ export default function AboutPage() {
             Whether designing responsive, visually appealing front-ends with React and TailwindCSS or building scalable
             backends with Node.js, Express, and MongoDB, I thrive on turning ideas into functional, impactful applications.
             <br />
-            Beyond coding, I am passionate about continuous learning and staying abreast of industry trends to deliver
-            cutting-edge solutions. In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes, going to the gym,
-            gaming and cheering on my favorite teams with loved ones.
+            In my free time I enjoy cooking new things or perfecting dishes I know, taking hikes, going to the gym,
+            gaming and cheering on my favorite teams with loved ones.<br/>
+            If you&apos;re looking for a dedicated developer eager to contribute and grow, let&apos;s connect!
           </p>
 
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href="https://www.linkedin.com/daniel-marinelarena-dev"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+              className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+            >
+              <span
+                className="inline-flex items-center justify-center rounded-full border border-(--foreground)/30 bg-(--foreground)/8 p-1.5"
+                aria-hidden="true"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4">
+                  <path
+                    fill="currentColor"
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.266 2.37 4.266 5.455v6.286ZM5.337 7.433a2.065 2.065 0 1 1 0-4.13 2.065 2.065 0 0 1 0 4.13ZM7.119 20.452H3.556V9h3.563v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003Z"
+                  />
+                </svg>
+              </span>
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:webdevdano@gmail.com"
+              aria-label="Email"
+              title="Email"
+              className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+            >
+              <span
+                className="inline-flex items-center justify-center rounded-full border border-(--foreground)/30 bg-(--foreground)/8 p-1.5"
+                aria-hidden="true"
+              >
+                <EnvelopeIcon className="h-4 w-4" />
+              </span>
+              Email
+            </a>
+          </div>
+
+          <div className="mt-4">
             <a
               href="/PortfolioMedia/Daniel_Marinelarena_WebDev-Resume.pdf"
               download
