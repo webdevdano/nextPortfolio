@@ -46,7 +46,7 @@ export default function Home() {
 
             <p className="mt-6 max-w-2xl text-(--body) leading-relaxed">
               I&apos;m a full-stack developer who loves building fast, polished web apps.<br/>
-              Outside of coding, I&apos;m into cooking, music, and the outdoors. I&apos;m currently looking for a 
+              Outside of coding, I&apos;m into cooking, music, and the outdoors.<br /> I&apos;m currently looking for a 
               team where I can contribute, learn and continue becoming a better developer.
             </p>
           </section>
