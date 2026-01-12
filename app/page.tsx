@@ -21,6 +21,8 @@ export default function Home() {
                 alt="Daniel Marinelarena"
                 width={160}
                 height={160}
+                priority
+                sizes="(max-width: 640px) 120px, 160px"
                 className="h-30 w-30 sm:h-30 sm:w-30 mt-2 mr-5 rounded-full object-cover border border-(--foreground)/15 bg-(--foreground)/3 shrink-0"
               />
 

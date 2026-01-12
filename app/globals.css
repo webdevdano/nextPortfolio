@@ -41,13 +41,7 @@ footer {
 }
 
 .header-backdrop {
-  background-image:
-    linear-gradient(to bottom, transparent 0%, transparent 55%, var(--background) 100%),
-    url("/PortfolioMedia/Images/HappyIslesParkingSun1.jpeg");
   background-color: var(--background);
-  background-size: 100% auto;
-  background-position: center var(--header-backdrop-y, 0%);
-  background-repeat: no-repeat;
 }
 
 .no-scrollbar {

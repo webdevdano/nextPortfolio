@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import HeaderBackdrop from "./components/HeaderBackdrop";
-import MusicPill from "./components/MusicPill";
+import MusicPillClient from "./components/MusicPillClient";
 import Providers from "./providers";
 
 const montserrat = Montserrat({
@@ -35,7 +35,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Footer />
-          <MusicPill
+          <MusicPillClient
             tracks={[
               {
                 src: "/PortfolioMedia/Audio/Machinedrum%20-%20Ur2yung.mp3",

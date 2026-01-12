@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function HeaderBackdrop() {
-  const ref = useRef<HTMLDivElement | null>(null);
   const [y, setY] = useState(0);
 
   useEffect(() => {
@@ -32,10 +32,24 @@ export default function HeaderBackdrop() {
 
   return (
     <div
-      ref={ref}
       aria-hidden="true"
-      className="header-backdrop pointer-events-none fixed inset-x-0 top-0 h-112 z-0"
-      style={{ ["--header-backdrop-y" as never]: `${y}%` } as React.CSSProperties}
-    />
+      className="header-backdrop pointer-events-none fixed inset-x-0 top-0 h-112 z-0 overflow-hidden"
+    >
+      <Image
+        src="/PortfolioMedia/Images/HappyIslesParkingSun1.jpeg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+        style={{ objectPosition: `center ${y}%` }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, transparent 0%, transparent 55%, var(--background) 100%)",
+        }}
+      />
+    </div>
   );
 }
