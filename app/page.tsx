@@ -45,8 +45,9 @@ export default function Home() {
             </div>
 
             <p className="mt-6 max-w-2xl text-(--body) leading-relaxed">
-              Freelancer with a passion for coding, cooking, music & the outdoors. <br/>
-              Looking to land a career in tech and grow with a company giving 110%, becoming a better version of myself each day.
+              I&apos;m a full-stack developer who loves building fast, polished web apps.<br/>
+              Outside of coding, I&apos;m into cooking, music, and the outdoors. I&apos;m currently looking for a 
+              team where I can contribute, learn and continue becoming a better developer.
             </p>
           </section>
 
@@ -66,15 +67,17 @@ export default function Home() {
                 </p>
               </div>
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Tools + Other Platforms</h3>
+                <h3 className="text-(--foreground) font-medium">Third-Party Platforms</h3>
                 <p className="mt-2 text-sm text-(--body) leading-relaxed">
                   Git, GitHub, Vercel, Stripe, Render, Netlify
                 </p>
               </div>
               <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Michellaneous</h3>
+                <h3 className="text-(--foreground) font-medium">Miscellaneous</h3>
                 <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                  Responsive Design, CRUD Applications, Bartending, Dancing pretty good sometimes
+                  Responsive Design, CRUD Applications, Performance/UX (loading + error states),
+                  Accessibility (keyboard + semantic HTML)
+
                 </p>
               </div>
             </div>
