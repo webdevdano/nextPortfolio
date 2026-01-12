@@ -115,7 +115,7 @@ export default function AboutPage() {
                         </ul>
                       </Item>
           
-                      <Item heading="Front-End / Full Stack Developer" meta="2022 — Present · Various Projects">
+                      <Item heading="Front-End / Full Stack Developer" meta="2023 — Present · Various Projects">
                         <ul className="list-disc pl-5 space-y-2">
                           <li>Built and deployed multiple full-stack applications including a barbershop booking 
                             platform and an e-commerce site using React, Node.js, Express, and MongoDB.</li>
