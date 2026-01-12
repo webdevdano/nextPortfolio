@@ -8,6 +8,7 @@ export default function Hero({
   carousel = "manual",
   rows = 2,
   loop = "seamless",
+  eagerCount = 0,
 }: {
   name?: string;
   title?: string;
@@ -21,6 +22,7 @@ export default function Hero({
   carousel?: "manual" | "auto";
   rows?: 1 | 2;
   loop?: "seamless" | "restart";
+  eagerCount?: number;
 }) {
   const tilesRaw = (
     media ?? images?.map((img) => ({ kind: "image" as const, ...img })) ?? []
@@ -111,7 +113,9 @@ export default function Hero({
                               className="h-full w-full object-cover"
                               src={col.a.tile.src}
                               alt={col.a.tile.alt ?? ""}
-                              loading="lazy"
+                              loading={idx < eagerCount ? "eager" : "lazy"}
+                              fetchPriority={idx < eagerCount ? "high" : "auto"}
+                              decoding="async"
                             />
                           )}
                         </div>
@@ -138,7 +142,9 @@ export default function Hero({
                               className="h-full w-full object-cover"
                               src={col.b.tile.src}
                               alt={col.b.tile.alt ?? ""}
-                              loading="lazy"
+                              loading={idx < eagerCount ? "eager" : "lazy"}
+                              fetchPriority={idx < eagerCount ? "high" : "auto"}
+                              decoding="async"
                             />
                           )}
                         </div>
@@ -179,7 +185,9 @@ export default function Hero({
                             className="h-full w-full object-cover"
                             src={tile.src}
                             alt={tile.alt ?? ""}
-                            loading="lazy"
+                            loading={idx < eagerCount ? "eager" : "lazy"}
+                            fetchPriority={idx < eagerCount ? "high" : "auto"}
+                            decoding="async"
                           />
                         )}
                       </div>
@@ -216,7 +224,9 @@ export default function Hero({
                                 className="h-full w-full object-cover"
                                 src={col.a.tile.src}
                                 alt={col.a.tile.alt ?? ""}
-                                loading="lazy"
+                                loading={idx < eagerCount ? "eager" : "lazy"}
+                                fetchPriority={idx < eagerCount ? "high" : "auto"}
+                                decoding="async"
                               />
                             )}
                           </div>
@@ -243,7 +253,9 @@ export default function Hero({
                                 className="h-full w-full object-cover"
                                 src={col.b.tile.src}
                                 alt={col.b.tile.alt ?? ""}
-                                loading="lazy"
+                                loading={idx < eagerCount ? "eager" : "lazy"}
+                                fetchPriority={idx < eagerCount ? "high" : "auto"}
+                                decoding="async"
                               />
                             )}
                           </div>
@@ -253,7 +265,7 @@ export default function Hero({
                   </div>
                 ) : (
                   <div className="flex w-max h-72 gap-4 items-end">
-                    {rowA.map(({ tile, heightClass, widthClass, key }) => (
+                    {rowA.map(({ tile, heightClass, widthClass, key }, idx) => (
                       <div
                         key={`${key}:a`}
                         className={`${heightClass} ${widthClass} rounded-2xl ring-1 ring-(--foreground)/10 bg-(--foreground)/3 overflow-hidden shrink-0`}
@@ -275,7 +287,9 @@ export default function Hero({
                             className="h-full w-full object-cover"
                             src={tile.src}
                             alt={tile.alt ?? ""}
-                            loading="lazy"
+                            loading={idx < eagerCount ? "eager" : "lazy"}
+                            fetchPriority={idx < eagerCount ? "high" : "auto"}
+                            decoding="async"
                           />
                         )}
                       </div>

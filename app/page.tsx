@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import { Section } from "./components/ContentBlocks";
 import Image from "next/image";
+import LazyVideo from "./components/LazyVideo";
 
 export default function Home() {
   return (
@@ -101,14 +102,10 @@ export default function Home() {
                 >
                   <div className="relative overflow-visible">
                     <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
-                      <video
+                      <LazyVideo
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/HiddenGifts.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
+                        ariaLabel="Hidden Gifts preview"
                       />
                     </div>
                   </div>
@@ -139,14 +136,10 @@ export default function Home() {
                 >
                   <div className="relative overflow-visible">
                     <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
-                      <video
+                      <LazyVideo
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/UnitedFarms.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
+                        ariaLabel="UnitedFarms preview"
                       />
                     </div>
                   </div>
@@ -187,14 +180,10 @@ export default function Home() {
                 >
                   <div className="relative overflow-visible">
                     <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
-                      <video
+                      <LazyVideo
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/SurfsUp.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
+                        ariaLabel="Surfs Up preview"
                       />
                     </div>
                   </div>
@@ -247,14 +236,10 @@ export default function Home() {
                 >
                   <div className="relative overflow-visible">
                     <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
-                      <video
+                      <LazyVideo
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/FreshCutz.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
+                        ariaLabel="FreshCutz preview"
                       />
                     </div>
                   </div>
@@ -295,14 +280,10 @@ export default function Home() {
                 >
                   <div className="relative overflow-visible">
                     <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
-                      <video
+                      <LazyVideo
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/TasksOnTasks.mp4"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        preload="metadata"
+                        ariaLabel="TasksOnTasks preview"
                       />
                     </div>
                   </div>

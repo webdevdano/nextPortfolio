@@ -44,6 +44,10 @@ footer {
   background-color: var(--background);
 }
 
+.header-backdrop img {
+  object-position: center var(--header-backdrop-y, 0%);
+}
+
 .no-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: color-mix(in oklab, var(--foreground) 22%, transparent) transparent;

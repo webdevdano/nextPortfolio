@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function HeaderBackdrop() {
-  const [y, setY] = useState(0);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let raf = 0;
@@ -14,7 +14,7 @@ export default function HeaderBackdrop() {
       const scrollY = window.scrollY || 0;
       // Moves the background down as you scroll, capped for taste.
       const next = Math.min(60, scrollY / 12);
-      setY(next);
+      ref.current?.style.setProperty("--header-backdrop-y", `${next}%`);
     };
 
     const onScroll = () => {
@@ -32,6 +32,7 @@ export default function HeaderBackdrop() {
 
   return (
     <div
+      ref={ref}
       aria-hidden="true"
       className="header-backdrop pointer-events-none fixed inset-x-0 top-0 h-112 z-0 overflow-hidden"
     >
@@ -42,7 +43,6 @@ export default function HeaderBackdrop() {
         priority
         sizes="100vw"
         className="object-cover"
-        style={{ objectPosition: `center ${y}%` }}
       />
       <div
         className="absolute inset-0"

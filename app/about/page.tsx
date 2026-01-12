@@ -10,6 +10,7 @@ export default function AboutPage() {
       <main className="max-w-5xl mx-auto px-6 pt-28 pb-32">
         <Hero
           carousel="manual"
+          eagerCount={2}
           media={[
             { kind: "image", src: "/PortfolioMedia/Images/HappyIslesSign.jpeg", alt: "Happy Isles" },
             { kind: "video", src: "/PortfolioMedia/Videos/SturtevantFalls1.mp4" },
