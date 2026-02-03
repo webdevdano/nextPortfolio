@@ -296,20 +296,7 @@ export default function Home() {
         <Hero
           carousel="manual"
           media={[
-            { kind: "video", src: "/PortfolioMedia/Videos/BigSurFalls.mp4" },
-            { kind: "image", src: "/PortfolioMedia/Images/BonitaFallsClose.jpeg", alt: "Close Up Bonita Falls" },
-            { kind: "image", src: "/PortfolioMedia/Images/BonitaFallsPortrait.jpeg", alt: "Bonita Falls" },
-            { kind: "video", src: "/PortfolioMedia/Videos/BonitaFalls.mp4" },
-            { kind: "image", src: "/PortfolioMedia/Images/MistFallsPortrait.jpeg", alt: "Mist Falls" },
-            { kind: "video", src: "/PortfolioMedia/Videos/MistFalls.mp4" },
-            { kind: "image", src: "/PortfolioMedia/Images/SequoiasCrown.jpeg", alt: "Sequoias Crown" },
-            { kind: "image", src: "/PortfolioMedia/Images/SequoiasRoad.jpeg", alt: "Sequoias Road" },
-            { kind: "image", src: "/PortfolioMedia/Images/SequoiasShyness.jpeg", alt: "Sequoias" },
-            { kind: "image", src: "/PortfolioMedia/Images/ShermSunset.jpeg", alt: "Sunset" },
-            { kind: "image", src: "/PortfolioMedia/Images/YosemiteTunnelView.jpeg" },
-            { kind: "video", src: "/PortfolioMedia/Videos/YosemiteAS.mp4" },
-            { kind: "image", src: "/PortfolioMedia/Images/YosemiteFallsClosePortrait.jpeg", alt: "Yosemite Falls Close" },
-            { kind: "image", src: "/PortfolioMedia/Images/YosemiteFallsPortrait.jpeg", alt: "Yosemite Falls" }
+           
           ]}
         />
       </main>
