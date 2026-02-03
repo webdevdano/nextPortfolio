@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="text-sm text-(--foreground)/60 flex items-center justify-between">
-          <span>© {new Date().getFullYear()} / Websites by Dano</span>
+          <span>© {new Date().getFullYear()} / Developed by Daniel Marinelarena</span>
         </div>
       </div>
     </footer>

@@ -25,6 +25,13 @@ export default function NavPill() {
         About
       </Link>
 
+      <Link
+        href="/contact"
+        className={linkClass(pathname?.startsWith("/contact") ?? false)}
+      >
+        Contact
+      </Link>
+
       <div className="h-6 w-px bg-(--foreground)/15" aria-hidden="true" />
 
       <LightDarkSwitch variant="inline" />
