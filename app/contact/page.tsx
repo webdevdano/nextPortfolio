@@ -71,7 +71,7 @@ export default function ContactPage() {
           {status === "loading" ? "Sending..." : "Send Message"}
         </button>
         {status === "success" && (
-          <div className="text-green-600 text-center mt-2">Message sent successfully!</div>
+          <div className="text-green-600 text-center mt-2">Message received!<br/> I will get back to you shortly.</div>
         )}
         {status === "error" && (
           <div className="text-red-600 text-center mt-2">Something went wrong. Please try again.</div>
