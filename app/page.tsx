@@ -71,6 +71,8 @@ export default function Home() {
 
           {/* Recent Projects */} 
           <Section title="Recent Projects">
+
+            {/* Hidden Gifts */}
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
               <div className="flex flex-col sm:flex-row sm:items-start gap-6">
                 <div className="min-w-0">
@@ -79,7 +81,6 @@ export default function Home() {
                     Recent commissioned E-Commerce website built with Next.js, React, Node, Express, MongoDB, and TailwindCSS. <br />
                     Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
                   </p>
-
                   <div className="mt-4 flex flex-wrap items-center gap-3">
                     <a
                       href="https://thehiddengiftstore.com"
@@ -93,7 +94,6 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-
                 <div
                   className="group w-full sm:w-64 shrink-0"
                   tabIndex={0}
@@ -113,6 +113,7 @@ export default function Home() {
               </div>
             </div>
 
+            {/* UnitedFarms */}
             <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
               <div className="flex flex-col sm:flex-row sm:items-start gap-6">
                 <div className="min-w-0">
@@ -123,11 +124,7 @@ export default function Home() {
                     Including user login, search, API integration for location data and content management.<br/>
                     Biggest technical lift was implementing reliable geolocation filtering and secure API endpoints.<br/>
                   </p>
-
-                  
-                  
-               </div>
-
+                </div>
                 <div
                   className="group w-full sm:w-64 shrink-0"
                   tabIndex={0}
@@ -140,6 +137,91 @@ export default function Home() {
                         className="h-40 w-full object-cover"
                         src="/PortfolioMedia/Videos/Projects/UnitedFarms.mp4"
                         ariaLabel="UnitedFarms preview"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* NutriTracker */}
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">NutriTracker</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Nutrition tracking app to log meals, track macros, and monitor progress.<br/>
+                    Built with React + TypeScript frontend, Node/Express/Supabase backend, and styled with TailwindCSS.<br/>
+                    Features user authentication, CRUD operations for meals, and data visualization with charts.<br/>
+                    Overcame challenges with state management and ensuring accurate nutritional calculations.
+                  </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://nutritrackerdemo.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="NutriTracker live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="NutriTracker preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <LazyVideo
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/NutriTracker.mp4"
+                        ariaLabel="NutriTracker preview"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Just Right Janitorial */}
+            <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+              <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                <div className="min-w-0">
+                  <h3 className="text-(--foreground) font-medium">Just Right Janitorial</h3>
+                  <p className="mt-2 text-sm text-(--body) leading-relaxed">
+                    Recent business website for a janitorial service company built with Next.js, React, and TailwindCSS.<br />
+                    Features service listings, contact form, and responsive design for mobile and desktop.<br />
+                    Focused on clean visuals, fast loading times, and easy navigation to enhance user experience.
+                  </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://justrightjanitorial.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="Just Right Janitorial live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+                <div
+                  className="group w-full sm:w-64 shrink-0"
+                  tabIndex={0}
+                  aria-label="Just Right Janitorial preview (hover to expand)"
+                  title="Hover to expand"
+                >
+                  <div className="relative overflow-visible">
+                    <div className="relative overflow-hidden rounded-2xl border border-(--foreground)/10 bg-(--background)/40 transition-transform duration-300 ease-out sm:group-hover:scale-[1.7] sm:group-hover:-translate-y-6 sm:group-hover:-translate-x-6 sm:group-hover:z-20 sm:group-focus-visible:scale-[1.7] sm:group-focus-visible:-translate-y-6 sm:group-focus-visible:-translate-x-6 sm:group-focus-visible:z-20">
+                      <LazyVideo
+                        className="h-40 w-full object-cover"
+                        src="/PortfolioMedia/Videos/Projects/JustRightJanitorial.mp4"
+                        ariaLabel="Just Right Janitorial preview"
                       />
                     </div>
                   </div>
@@ -292,13 +374,6 @@ export default function Home() {
             </div>
           </Section>
         </div>
-
-        <Hero
-          carousel="manual"
-          media={[
-           
-          ]}
-        />
       </main>
     </div>
   );
