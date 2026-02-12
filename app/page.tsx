@@ -82,7 +82,7 @@ export default function Home() {
                     Features include product browsing, shopping cart, user authentication, Stripe payment integration and an admin panel with CRUD functions.
                   </p>
                   <div className="mt-4 flex flex-wrap items-center gap-3">
-                    <a
+                    {/* <a
                       href="https://thehiddengiftstore.com"
                       target="_blank"
                       rel="noreferrer"
@@ -91,7 +91,7 @@ export default function Home() {
                       title="Live Demo"
                     >
                       Live Demo
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div
