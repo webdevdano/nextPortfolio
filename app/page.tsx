@@ -151,9 +151,11 @@ export default function Home() {
                   <h3 className="text-(--foreground) font-medium">NutriTracker</h3>
                   <p className="mt-2 text-sm text-(--body) leading-relaxed">
                     Nutrition tracking app to log meals, track macros, and monitor progress.<br/>
-                    Built with React + TypeScript frontend, Node/Express/Supabase backend, and styled with TailwindCSS.<br/>
-                    Features user authentication, CRUD operations for meals, and data visualization with charts.<br/>
-                    Overcame challenges with state management and ensuring accurate nutritional calculations.
+                    Built with React + TypeScript frontend, Node/Express backend, and styled with TailwindCSS.<br/>
+                    Migrated from Supabase to a self-hosted PostgreSQL database containerized with Docker for full control over data and schema.<br/>
+                    Replaced the REST API with GraphQL (Apollo Server) to enable flexible, typed queries and reduce over-fetching.<br/>
+                    Covered with Jest unit tests for nutritional calculations and API resolvers, and Cypress end-to-end tests for core user flows.<br/>
+                    Features user authentication, CRUD operations for meals, and data visualization with charts.
                   </p>
                   <div className="mt-4 flex flex-wrap items-center gap-3">
                     <a
