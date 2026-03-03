@@ -160,6 +160,16 @@ export default function Home() {
                   </p>
                   <div className="mt-4 flex flex-wrap items-center gap-3">
                     <a
+                      href="https://united-farms.vercel.app"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="UnitedFarms live demo"
+                      title="Live Demo"
+                    >
+                      Live Demo
+                    </a>
+                    <a
                       href="https://github.com/webdevdano/unitedFarms"
                       target="_blank"
                       rel="noreferrer"
