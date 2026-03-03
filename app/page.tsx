@@ -1,4 +1,3 @@
-import Hero from "./components/Hero";
 import { Section } from "./components/ContentBlocks";
 import Image from "next/image";
 import LazyVideo from "./components/LazyVideo";
@@ -117,6 +116,16 @@ export default function Home() {
                     >
                       Live Demo
                     </a>
+                    <a
+                      href="https://github.com/webdevdano/hiddendemo"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="Hidden Gifts repository"
+                      title="Repo"
+                    >
+                      Repo
+                    </a>
                   </div>
                 </div>
                 <div
@@ -149,6 +158,18 @@ export default function Home() {
                     Including user login, search, API integration for location data and content management.<br/>
                     Biggest technical lift was implementing reliable geolocation filtering and secure API endpoints.<br/>
                   </p>
+                  <div className="mt-4 flex flex-wrap items-center gap-3">
+                    <a
+                      href="https://github.com/webdevdano/unitedFarms"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
+                      aria-label="UnitedFarms repository"
+                      title="Repo"
+                    >
+                      Repo
+                    </a>
+                  </div>
                 </div>
                 <div
                   className="group w-full sm:w-64 shrink-0"
