@@ -39,32 +39,57 @@ export default function Home() {
           {/* Skills */}
           <Section title="Technical Skills">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Front-End</h3>
-                <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                  Next.js, React, TailwindCSS, TypeScript, HTML5, CSS3, JavaScript (ES6+)
-                </p>
-              </div>
-              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Back-End</h3>
-                <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                  Node.js, Express.js, MongoDB, RESTful APIs, JWT Authentication
-                </p>
-              </div>
-              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Third-Party Platforms</h3>
-                <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                  Git, GitHub, Vercel, Stripe, Render, Netlify
-                </p>
-              </div>
-              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
-                <h3 className="text-(--foreground) font-medium">Miscellaneous</h3>
-                <p className="mt-2 text-sm text-(--body) leading-relaxed">
-                  Responsive Design, CRUD Applications, Performance/UX (loading + error states),
-                  Accessibility (keyboard + semantic HTML)
 
-                </p>
+              {/* Frontend */}
+              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+                <h3 className="text-(--foreground) text-sm font-medium">Frontend</h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {["Next.js","React","TypeScript","Tailwind CSS","JavaScript (ES6+)","HTML5 / CSS3","TanStack Query","Zustand"].map((s) => (
+                    <span key={s} className="inline-flex items-center rounded-full border border-(--foreground)/12 bg-(--foreground)/5 px-2.5 py-1 text-xs text-(--body)">{s}</span>
+                  ))}
+                </div>
               </div>
+
+              {/* Backend */}
+              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+                <h3 className="text-(--foreground) text-sm font-medium">Backend</h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {["Node.js","Express.js","PostgreSQL","MongoDB","RESTful APIs","GraphQL","JWT Authentication"].map((s) => (
+                    <span key={s} className="inline-flex items-center rounded-full border border-(--foreground)/12 bg-(--foreground)/5 px-2.5 py-1 text-xs text-(--body)">{s}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Testing */}
+              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+                <h3 className="text-(--foreground) text-sm font-medium">Testing &amp; Quality</h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {["Jest","Cypress","React Testing Library"].map((s) => (
+                    <span key={s} className="inline-flex items-center rounded-full border border-(--foreground)/12 bg-(--foreground)/5 px-2.5 py-1 text-xs text-(--body)">{s}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* DevOps */}
+              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5">
+                <h3 className="text-(--foreground) text-sm font-medium">DevOps &amp; Infrastructure</h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {["Docker","Git / GitHub","Vercel / Render / Netlify","GitHub Actions"].map((s) => (
+                    <span key={s} className="inline-flex items-center rounded-full border border-(--foreground)/12 bg-(--foreground)/5 px-2.5 py-1 text-xs text-(--body)">{s}</span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Miscellaneous */}
+              <div className="rounded-2xl border border-(--foreground)/10 bg-(--foreground)/3 px-6 py-5 sm:col-span-2">
+                <h3 className="text-(--foreground) text-sm font-medium">Miscellaneous</h3>
+                <div className="mt-3 flex flex-wrap gap-1.5">
+                  {["Responsive Design","CRUD Operations","Performance Optimization","UX/UI (loading & error states)","Accessibility (WCAG, keyboard nav, semantic HTML)"].map((s) => (
+                    <span key={s} className="inline-flex items-center rounded-full border border-(--foreground)/12 bg-(--foreground)/5 px-2.5 py-1 text-xs text-(--body)">{s}</span>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </Section>
 
