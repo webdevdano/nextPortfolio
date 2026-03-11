@@ -83,7 +83,7 @@ export default function AboutPage() {
 
           <div className="mt-4">
             <a
-              href="/PortfolioMedia/Daniel-Marinelarena-WD.pdf"
+              href="/public/Daniel-Marinelarena-WD.pdf"
               download
               className="glass-sheen inline-flex items-center gap-2 rounded-full border border-(--foreground)/25 bg-(--foreground)/5 px-4 py-2 text-sm font-medium text-(--foreground) hover:bg-(--foreground)/8 hover:border-(--foreground)/35 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--foreground)/35"
               aria-label="Download resume PDF"
